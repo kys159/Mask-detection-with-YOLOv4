@@ -187,7 +187,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 | Value | Train Good | Train Bad | Train Merge |
 | :---------: | :---------: | :---------: | :---------: |
 | No_mask_AP | 46.31% | 51.68% | 54.54% |
-| mask_AP | 67.55% | 77.05% | 73.54$ |
+| mask_AP | 67.55% | 77.05% | 73.54% |
 | mAP50 | 56.93% | 64.36% | 64.04% |
 | FPS | 22.9 | 22.75 | 23.05 |
 | Average IOU | 48.42% | 51.86% | 51.83% |
@@ -195,7 +195,11 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 &nbsp;&nbsp; 위 사진은 분석과정 1번에서의 데이터 셋을 train 후 test set에서의 결과에 대한 chart와 table이다. 선행연구 데이터만 활용한 경우 성능이 비교적 떨어지는 것을 확인하였고 __크롤링 데이터와 절반씩 사용한 데이터의 성능이 거의 비슷함__ 을 알 수 있다. 하지만 __본 연구의 목적이 마스크를 쓰지 않은 사람을 탐지해내는것이라는 점과 FPS를 고려했을 때__ , 더 뛰어난 절반씩 사용한 데이터를 통해 학습한 모델을 최종 모델로 선정한다.
 
 ### 3. Predict 결과예시 및 영상 예시
-![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/61648914/101670531-a1439b80-3a96-11eb-91ca-a7d43178e761.gif)
+* Predict image
+
+* Predict video1
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/61648914/101670531-a1439b80-3a96-11eb-91ca-a7d43178e761.gif) <br>
+* Predict video2
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/61648914/101670983-3c3c7580-3a97-11eb-8d92-c47355aeafc2.gif)
 
 
