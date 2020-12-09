@@ -196,7 +196,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 
 ### 3. Predict 결과 및 영상예시
 * Predict image <br>
-![test_sample_result](https://user-images.githubusercontent.com/61648914/101678426-482d3500-3aa1-11eb-8ca9-62c5d09b7c7d.PNG) <br>
+ <img src="https://user-images.githubusercontent.com/61648914/101678426-482d3500-3aa1-11eb-8ca9-62c5d09b7c7d.PNG" width="50%" height="30%" title="px(픽셀) 크기 설정"> <br>
 * Predict video1 <br>
 ![ezgif com-gif-maker2](https://user-images.githubusercontent.com/61648914/101675531-46fa0900-3a9d-11eb-9678-f2596ff6590f.gif) <br>
 * Predict video2 <br>
