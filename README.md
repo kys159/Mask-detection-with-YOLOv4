@@ -45,13 +45,13 @@ git clone https://github.com/AlexeyAB/darknet.git
 <br>
 * darknet을 컴퓨터에 make하기 위해 makefile을 수정한다. GPU를 사용할 것이라면 GPU, CUDNN을 1로 설정하며 CUDNN_HALF는 학습속도를 향상시키는 부분이라고 한다. Open cv를 사용할 경우 OPENCV=1로 수정하고 LIBSO는 추후 응용 프로그램에 사용할 so 파일을 생성하는 옵션이다.<br>
 ```
-GPU=1
-CUDNN=1
-CUDNN_HALF=1
-OPENCV=1
-AVX=0
-OPENMP=0
-LIBSO=1
+GPU=1 <br>
+CUDNN=1 <br>
+CUDNN_HALF=1 <br>
+OPENCV=1 <br>
+AVX=0 <br>
+OPENMP=0 <br>
+LIBSO=1 <br>
 ```
 <br>
 * make를 통해 darknet을 make 한다.<br>
