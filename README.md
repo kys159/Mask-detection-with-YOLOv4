@@ -147,7 +147,7 @@ Ctrl+f를 이용하여 yolo부분을 검색해서 수정한다. yolo 부분에 c
  - `obj.data` 전체적인 파일의 경로들을 저장한다.
  - `obj.names` classes name을 저장한다.
  - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다. 
- - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다. test.txt와 train.txt는 모두 
+ - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다. test.txt와 train.txt는 모두 merge_image_path.ipynb 코드를 활용해 경로를 저장했다.
 
 <br>
 
