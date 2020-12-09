@@ -1,0 +1,6 @@
+classes= 2
+train  = /home/fadi/darknet/custom_data/train_bad.txt
+valid  = /home/fadi/darknet/custom_data/test.txt
+names = /home/fadi/darknet/custom_data/obj.names
+backup = backup/train_bad_weights
+
