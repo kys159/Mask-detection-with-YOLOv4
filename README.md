@@ -168,7 +168,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 &nbsp;&nbsp; 수집한 데이터는 선행연구에서 사용한 비교적 detection이 쉬운 데이터(이하 선행연구 데이터)와 구글에서 크롤링한 detection이 쉽지 않은 데이터(이하 크롤링 데이터)로 구성되어있다. 본 연구의 목적은 cctv같은 작고 많은 사람이 나타나는 영상에서 마스크를 쓰지 않은 사람을 탐지해 낼 수 있는 알고리즘을 학습시키는 것이므로 어떠한 데이터로 학습할 때 더 좋은 성능을 보이는지 확인해야한다. 따라서 **Train data set**으로 선행연구 데이터, 크롤링 데이터, 그리고 선행 연구 데이터와 크롤링 데이터를 절반씩 사용한 데이터를 활용한다. 또한 **Test data set**은 선행연구 데이터와 크롤링 데이터를 절반씩 사용하여 평가한다.
 
 ### 2. 실험결과
-<img src="https://user-images.githubusercontent.com/61648914/101640104-6d0ab380-3a73-11eb-9898-acbcc09e43da.png" width="50%" height="30%" title="px(픽셀) 크기 설정"><img src="https://user-images.githubusercontent.com/61648914/101640501-ee624600-3a73-11eb-84cd-ba1b065fe04b.png" width="50%" height="30%" title="px(픽셀) 크기 설정">
+<img src="https://user-images.githubusercontent.com/61648914/101640104-6d0ab380-3a73-11eb-9898-acbcc09e43da.png" width="100%" height="30%" title="px(픽셀) 크기 설정"><img src="https://user-images.githubusercontent.com/61648914/101640501-ee624600-3a73-11eb-84cd-ba1b065fe04b.png" width="100%" height="30%" title="px(픽셀) 크기 설정">
 위 사진은 분석과정 1번에서의 데이터 셋을 train 후 test set에서의 결과에 대한 chart이다. 절반씩 사용한 데이터가 제일 좋다~~~~
 
 ### 3. Predict 결과예시 및 영상 예시
