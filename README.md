@@ -20,7 +20,7 @@
 
 <br>
 
-## :bulb: Environment & Data setting
+## :bulb: Environment & setting
 
 ### 0. 실행환경 & 실험환경
 - 실행환경
@@ -30,12 +30,13 @@
   + OpenCV >= 2.4
   + cuDNN >= 7.0
 - 실험환경
+  + Python 3.7
   + Ubuntu 18.04
   + RAM 64GB
   + GPU 1070ti * 2
   + CUDA 10.1
-  + OpenCV 4.42
-  + cuDNN 7.64
+  + OpenCV 4.4.2
+  + cuDNN 7.6.4
 
 <br>
 
@@ -153,3 +154,22 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
 ### 5. Weights
 ##### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
 https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
+
+### 6. Train
+학습 명령어를 통해 학습을 진행한다.
+기본 명령어 형태는 ./darknet detector train <.data파일이 있는경로> <.cfg파일이 있는 경로> <pre-train모델 경로 (생략가능)> <-map(생략가능)> 이다. gpus의 경우 multi gpu에 대해 사용한다.
+
+```
+./darknet detector train /custom_data/obj.data /cfg/yolov4-custom.cfg /custom_data/yolov4.conv.137 -map -gpus 0,1
+```
+
+## :bulb: 분석과정
+### 1. 데이터 분할
+&nbsp;&nbsp; 수집한 데이터는 선행연구에서 사용한 비교적 detection이 쉬운 데이터(이하 선행연구 데이터)와 구글에서 크롤링한 detection이 쉽지 않은 데이터(이하 크롤링 데이터)로 구성되어있다. 본 연구의 목적은 cctv같은 작고 많은 사람이 나타나는 영상에서 마스크를 쓰지 않은 사람을 탐지해 낼 수 있는 알고리즘을 학습시키는 것이므로 어떠한 데이터로 학습할 때 더 좋은 성능을 보이는지 확인해야한다. 따라서 **Train data set**으로 선행연구 데이터, 크롤링 데이터, 그리고 선행 연구 데이터와 크롤링 데이터를 절반씩 사용한 데이터를 활용한다. 또한 **Test data set**은 선행연구 데이터와 크롤링 데이터를 절반씩 사용하여 평가한다.
+
+### 2. 실험결과
+
+
+### 3. Predict 결과예시 및 영상 예시
+
+## :bulb: 보완하고 싶은 점
