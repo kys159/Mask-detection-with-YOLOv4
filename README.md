@@ -129,7 +129,7 @@ Ctrl+f를 이용하여 yolo부분을 검색해서 수정한다. yolo 부분에 c
 
 ### 4. Data set 정의
 ##### 4.1 Padding
-YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수정하여 model을 거치게 되므로 resize할 필요가 없다. 하지만 한정된 VRAM에서 일정한 size의 data를 input 함으로써 최적의 활용이 가능해지므로 데이터의 size를 608 * 608로 resize하였다. 코드는 ooo와 같다.
+YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수정하여 model을 거치게 되므로 resize할 필요가 없다. 하지만 한정된 VRAM에서 일정한 size의 data를 input 함으로써 최적의 활용이 가능해지므로 데이터의 size를 608 * 608로 resize하였다. 코드는 Resize_blackpad_img.ipynb와 같다.
 
 ##### 4.2 데이터셋 경로 파일 수정
 업로드 한 custom_data 형식에 맞게 txt 파일을 만든다.
@@ -142,7 +142,7 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
    └── train.txt
 ```
  - `dataset_label` 모든 데이터셋과 각 사진들의 label에대한 txt파일을 저장한다. AlexyAB의 Yolo_mark를 활용했으며 주소는 다음과 같다. https://github.com/AlexeyAB/Yolo_mark
- 그 후, 앞서 2번에서 언급한 그림파일 혹은 라벨이 없는 이미지를 제거하였다. 코드는 OOO과 같다.
+ 그 후, 앞서 2번에서 언급한 그림파일 혹은 라벨이 없는 이미지를 제거하였다. 코드는 Delete_no_label_img.ipynb와 같다.
  - `obj.data` 전체적인 파일의 경로들을 저장한다.
  - `obj.names` classes name을 저장한다.
  - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다.
@@ -151,6 +151,5 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
 <br>
 
 ### 5. Weights
- #### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
- https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
- <a href="drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp">yolov4 weights from AlexeyAB github</a>
+##### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
+https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
