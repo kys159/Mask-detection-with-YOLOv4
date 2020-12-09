@@ -92,7 +92,6 @@ policy=steps
 steps=3200,3600
 scales=.1,.1
 ```
-<br>
 
  + batch : 배치사이즈
  + subdivisions : 배치 사이즈를 얼마나 쪼개서 학습할 것인지에 대한 설정 값이다.
@@ -112,7 +111,7 @@ activation=linear
 [yolo]
 mask = 0,1,2
 anchors = 12, 16, 19, 36, 40, 28, 36, 75, 76, 55, 72, 146, 142, 110, 192, 243, 459, 401
-**classes=2**
+classes=2
 num=9
 jitter=.3
 ignore_thresh = .7
@@ -125,8 +124,23 @@ iou_loss=ciou
 nms_kind=greedynms
 beta_nms=0.6
 ```
+Ctrl+f를 이용하여 yolo부분을 검색해서 수정한다. yolo 부분에 classes와 convolutional 부분의 filters를 수정한다. classes는 훈련 시키는 데이터셋의 classes 갯수, filter 갯수는 (classes+5) * 3으로 AlexeyAB github에서 제시하고 있다. yolo 부분은 총 3개가 있어 모두 찾아 수정한다.
 
-
+### 4. Data set 정의
+업로드 한 custom_data 형식에 맞게 txt 파일을 만든다.
+```
+├── custom_data/
+   ├── dataset_label
+   ├── obj.data
+   ├── obj.names
+   ├── test.txt
+   └── train.txt
+```
+ - `dataset_label` 모든 데이터셋과 각 사진들의 label에대한 txt파일을 저장한다. AlexyAB의 Yolo_mark를 활용했으며 주소는 다음과 같다. https://github.com/AlexeyAB/Yolo_mark
+ - `obj.data` 전체적인 파일의 경로들을 저장한다.
+ - `obj.names` classes name을 저장한다.
+ - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다.
+ - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다.
 
 
 
