@@ -198,9 +198,9 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 * Predict image <br>
 
 * Predict video1 <br>
-![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/61648914/101670531-a1439b80-3a96-11eb-91ca-a7d43178e761.gif) <br>
+![ezgif com-gif-maker2](https://user-images.githubusercontent.com/61648914/101675531-46fa0900-3a9d-11eb-9678-f2596ff6590f.gif) <br>
 * Predict video2 <br>
-![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/61648914/101670983-3c3c7580-3a97-11eb-8d92-c47355aeafc2.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/61648914/101675722-83c60000-3a9d-11eb-8783-0e8d69e5e5f6.gif)
 
 
 ## :bulb: 보완하고 싶은 점
