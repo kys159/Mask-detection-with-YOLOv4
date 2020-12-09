@@ -56,7 +56,7 @@ LIBSO=1
 <br>
 * make를 통해 darknet을 make 한다.<br>
 ```
-make
+make asdasd
 ```
 
 ### 2. 데이터 수집
