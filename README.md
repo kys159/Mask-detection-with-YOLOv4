@@ -66,7 +66,7 @@ make
 <br>
 
 ### 2. 데이터 수집
-선행 연구(주소)에서 활용한 데이터셋 887개와 구글에서 __"mask people" , "korea mask people", "wear mask people"__ 이라고 검색하여 크롤링한 후 중복되거나 그림파일이거나 혹은 파일이 열리지 않는 경우를 제외하여 데이터셋 756개를 수집하였다. 코드는 google_mask_image_crawling.ipynb 이다.
+&nbsp;&nbsp; 선행 연구(주소)에서 활용한 데이터셋 887개와 구글에서 __"mask people" , "korea mask people", "wear mask people"__ 이라고 검색하여 크롤링한 후 중복되거나 그림파일이거나 혹은 파일이 열리지 않는 경우를 제외하여 데이터셋 756개를 수집하였다. 코드는 google_mask_image_crawling.ipynb 이다.
 
 <br>
 
@@ -130,7 +130,7 @@ Ctrl+f를 이용하여 yolo부분을 검색해서 수정한다. yolo 부분에 c
 
 ### 4. Data set 정의
 ##### 4.1 Data resize
-YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수정하여 model을 거치게 되므로 resize할 필요가 없다. 하지만 한정된 VRAM에서 일정한 size의 data를 input 함으로써 최적의 활용이 가능해지므로 데이터의 size를 608 * 608로 resize하였다. 원본 이미지의 가로 세로 중 긴 면을 608로 맞추고 나머지 짧은 면을 608이 되도록 black padding 하였다. 코드는 Resize_blackpad_img.ipynb와 같다.
+&nbsp;&nbsp; YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수정하여 model을 거치게 되므로 resize할 필요가 없다. 하지만 한정된 VRAM에서 일정한 size의 data를 input 함으로써 최적의 활용이 가능해지므로 데이터의 size를 608 * 608로 resize하였다. 원본 이미지의 가로 세로 중 긴 면을 608로 맞추고 나머지 짧은 면을 608이 되도록 black padding 하였다. 코드는 Resize_blackpad_img.ipynb와 같다.
 
 ##### 4.2 데이터셋 경로 파일 수정
 업로드 한 custom_data 형식에 맞게 txt 파일을 만든다.
@@ -146,8 +146,8 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
  그 후, 앞서 2번에서 언급한 그림파일 혹은 라벨이 없는 이미지를 제거하였다. 코드는 Delete_no_label_img.ipynb와 같다.
  - `obj.data` 전체적인 파일의 경로들을 저장한다.
  - `obj.names` classes name을 저장한다.
- - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다.
- - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다.
+ - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다. 
+ - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다. test.txt와 train.txt는 모두 
 
 <br>
 
