@@ -169,8 +169,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 
 ### 2. 실험결과
 <figure>
-<img src="https://user-images.githubusercontent.com/61648914/101640104-6d0ab380-3a73-11eb-9898-acbcc09e43da.png" width="33%" height="10%" title="px(픽셀) 크기 설정"><figcaption>선행연구 데이터 결과.</figcaption>
- </figure><img src="https://user-images.githubusercontent.com/61648914/101640501-ee624600-3a73-11eb-84cd-ba1b065fe04b.png" width="33%" height="10%" title="px(픽셀) 크기 설정">
+<img src="https://user-images.githubusercontent.com/61648914/101640104-6d0ab380-3a73-11eb-9898-acbcc09e43da.png" width="33%" height="10%" title="px(픽셀) 크기 설정"><figcaption>선행연구 데이터 결과.</figcaption> </figure><img src="https://user-images.githubusercontent.com/61648914/101640501-ee624600-3a73-11eb-84cd-ba1b065fe04b.png" width="33%" height="10%" title="px(픽셀) 크기 설정">
 위 사진은 분석과정 1번에서의 데이터 셋을 train 후 test set에서의 결과에 대한 chart이다. 절반씩 사용한 데이터가 제일 좋다~~~~
 
 ### 3. Predict 결과예시 및 영상 예시
