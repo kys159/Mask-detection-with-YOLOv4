@@ -53,7 +53,11 @@ AVX=0
 OPENMP=0
 LIBSO=1
 ```
-
+<br>
+* make를 통해 darknet을 make 한다.
+```
+make
+```
 
 ### 2. 데이터 수집
 선행 연구에서 활용한 데이터셋 ooo개와 구글에서 ooo라고 검색하여 크롤링한 데이터셋 ooo개를 수집하였다.
