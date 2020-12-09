@@ -68,16 +68,13 @@ make
 ### 2. 데이터 수집
 선행 연구(주소)에서 활용한 데이터셋 887개와 구글에서 __"mask people" , "korea mask people", "wear mask people"__ 이라고 검색하여 크롤링한 후 중복되거나 그림파일이거나 혹은 파일이 열리지 않는 경우를 제외하여 데이터셋 756개를 수집하였다. 코드는 google_mask_image_crawling.ipynb 이다.
 
-### 2. cfg파일 수정
+### 3. cfg파일 수정
 cfg/yolov4-custom.cfg 파일을 AlexeyAB github에서 제시하는 최적의 값으로 수정한다. <br>
 
 ```
 [net]
 batch=16
 subdivisions=16
-# Training
-#width=512
-#height=512
 width=608
 height=608
 channels=3
@@ -97,14 +94,37 @@ scales=.1,.1
 ```
 <br>
 
- + batch
+ + batch : 배치사이즈
  + subdivisions : 배치 사이즈를 얼마나 쪼개서 학습할 것인지에 대한 설정 값이다.
  + width 및 height : 기본값은 416이지만 608로 변경하여 학습 할 경우 해상도 향상으로 정확도가 좋아질 수 있으나 OOM ERROR가 발생할 수 있음.
  + max_batches : 언제까지 iteration을 돌건지 설정하는 값으로 본인 데이터의 클래스 갯수 * 2000을 제시한다.
  + steps : max_batches의 80%와 90%를 설정한다.
 
+```
+[convolutional]
+size=1
+stride=1
+pad=1
+filters=21
+activation=linear
 
 
+[yolo]
+mask = 0,1,2
+anchors = 12, 16, 19, 36, 40, 28, 36, 75, 76, 55, 72, 146, 142, 110, 192, 243, 459, 401
+**classes=2**
+num=9
+jitter=.3
+ignore_thresh = .7
+truth_thresh = 1
+scale_x_y = 1.2
+iou_thresh=0.213
+cls_normalizer=1.0
+iou_normalizer=0.07
+iou_loss=ciou
+nms_kind=greedynms
+beta_nms=0.6
+```
 
 
 
