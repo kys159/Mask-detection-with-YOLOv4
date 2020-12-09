@@ -192,11 +192,11 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 | FPS | 23.15 | 22.95 | 23 |
 | Average IOU | 48.42% | 51.86% | 51.83% |
 
-* good
+* train good weights
 https://drive.google.com/file/d/13NKGxqUXc22EwTGnVtLU3toM-dZvUylt/view?usp=sharing
-* bad
+* train bad weights
 https://drive.google.com/file/d/18FOjxM3YvKYUmAN2xogcg33bxKpQ7GcJ/view?usp=sharing
-* merge
+* train merge weights
 https://drive.google.com/file/d/1wR-FoTWc4TPcjXtsFeaVHvUYpkyPZcD3/view?usp=sharing
 
 &nbsp;&nbsp; 위 사진은 분석과정 1번에서의 데이터 셋을 train 후 test set에서의 결과에 대한 chart와 table이다. 선행연구 데이터만 활용한 경우 성능이 비교적 떨어지는 것을 확인하였고 __크롤링 데이터와 절반씩 사용한 데이터의 성능이 거의 비슷함__ 을 알 수 있다. 하지만 __본 연구의 목적이 마스크를 쓰지 않은 사람을 탐지해내는것이라는 점을 고려했을 때__ , 더 뛰어난 절반씩 사용한 데이터를 통해 학습한 모델을 최종 모델로 선정한다.
