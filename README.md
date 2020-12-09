@@ -178,7 +178,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 
 
 ### 2. 실험결과
-![mAP 통합](https://user-images.githubusercontent.com/61648914/101667333-8ff89000-3a92-11eb-8f94-e20f31e9fcd4.png)
+![mAP 통합 (1)](https://user-images.githubusercontent.com/61648914/101667630-e8c82880-3a92-11eb-96b1-7b5ce352df39.png)
 위 사진은 분석과정 1번에서의 데이터 셋을 train 후 test set에서의 결과에 대한 chart이다. 절반씩 사용한 데이터가 제일 좋다~~~~
 
 ### 3. Predict 결과예시 및 영상 예시
