@@ -16,4 +16,46 @@
    + Object에 대한 좀 더 일반화된 특징을 학습한다. 가령 natural image로 학습하고 이를 artwork에 테스트 했을때, 다른 Detection System들에 비해 훨씬 높은 성능을 보여준다.
  - 단점:
    + 상대적으로 낮은 정확도 (특히, 작은 object에 대해)
- - 여기서 Yolo의 단점인 작은 object에 대해서 잘 탐지해내지 못한다는 부분을 보완하여 cctv같은 작고 많은 사람이 나타나는 영상에서 마스크를 쓰지 않은 사람을 탐지해 낼 수 있는 알고리즘을 학습시키는 것이 목표입니다.
+ - 여기서 Yolo의 단점인 작은 object에 대해서 잘 탐지해내지 못한다는 부분을 보완하여 cctv같은 작고 많은 사람이 나타나는 영상에서 마스크를 쓰지 않은 사람을 탐지해 낼 수 있는 알고리즘을 학습시키는 것이 목표이다.
+
+<br>
+
+## :bulb: Environment & Data setting
+
+### 0. 실행환경 & 실험환경
+- 실행환경
+  + Linux 
+  + CMake >= 3.12
+  + CUDA >= 10.0
+  + OpenCV >= 2.4
+  + cuDNN >= 7.0
+- 실험환경
+  + Ubuntu 18.04
+  + RAM 64GB
+  + GPU 1070ti * 2
+  + CUDA 10.1
+  + OpenCV 4.42
+  + cuDNN 7.64
+
+### 1. YOLOv4 설치
+* AlexAB의 github에 들어가서 git을 clone 해오거나 zip파일로 다운로드 받는다.<br>
+```
+git clone https://github.com/AlexeyAB/darknet.git
+```
+
+
+### 2. 데이터 수집
+선행 연구에서 활용한 데이터셋 ooo개와 구글에서 ooo라고 검색하여 크롤링한 데이터셋 ooo개를 수집하였다.
+
+### 2. cfg파일 수정
+
+
+
+
+
+
+
+
+
+### 1. Weights
+ #### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
