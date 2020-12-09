@@ -5,7 +5,7 @@
 최근 Real-time Object Detection에서 높은 FPS와 좋은 성능을 보이는 __Yolo(You Only Look Once)v4__ 를 활용해, <br>
 코로나19 예방을 위한 __마스크 착용 판별 AI__ 를 구축한다.
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/61648914/101667127-4dcf4e80-3a92-11eb-9731-45669c3df2c9.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/61648914/101675302-f97d9c00-3a9c-11eb-8f75-d9235929004f.gif)
 
 <br>
 
