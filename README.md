@@ -204,4 +204,6 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 
 
 ## :bulb: 보완하고 싶은 점
-
+ + tensorflow를 활용한 학습을 시도하고 싶다.
+ + 앱과 연동된 프로그램 개발을 시도하고 싶다.
+ 
