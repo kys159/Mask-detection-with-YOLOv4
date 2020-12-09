@@ -152,4 +152,5 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
 
 ### 5. Weights
  #### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
+ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
  <a href="drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp">yolov4 weights from AlexeyAB github</a>
