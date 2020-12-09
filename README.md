@@ -5,6 +5,8 @@
 최근 Real-time Object Detection에서 높은 FPS와 좋은 성능을 보이는 __Yolo(You Only Look Once)v4__ 를 활용해, <br>
 코로나19 예방을 위한 __마스크 착용 판별 AI__ 를 구축한다.
 
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/61648914/101667127-4dcf4e80-3a92-11eb-9731-45669c3df2c9.gif)
+
 <br>
 
 ## :bulb: 전체적인 분석 목표
@@ -167,7 +169,7 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 ### 1. 데이터 분할
 &nbsp;&nbsp; 수집한 데이터는 선행연구에서 사용한 비교적 detection이 쉬운 데이터(이하 선행연구 데이터)와 구글에서 크롤링한 detection이 쉽지 않은 데이터(이하 크롤링 데이터)로 구성되어있다. 본 연구의 목적은 cctv같은 작고 많은 사람이 나타나는 영상에서 마스크를 쓰지 않은 사람을 탐지해 낼 수 있는 알고리즘을 학습시키는 것이므로 어떠한 데이터로 학습할 때 더 좋은 성능을 보이는지 확인해야한다. 따라서 **Train data set**으로 선행연구 데이터, 크롤링 데이터, 그리고 선행 연구 데이터와 크롤링 데이터를 절반씩 사용한 데이터를 활용한다. 또한 **Test data set**은 선행연구 데이터와 크롤링 데이터를 절반씩 사용하여 평가한다.
 
-| set | Train Good | Train Bad | Train Merge | Test |
+| Set | Train Good | Train Bad | Train Merge | Test |
 | :---------: | :---------: | :---------: | :---------: | :---------: |
 | Number of Images | 767 | 656 | 713 | 220 |
 | Mask | 2,923 | 2,549 | 2,547 | 947 |
