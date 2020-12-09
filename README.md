@@ -206,4 +206,4 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 ## :bulb: 보완하고 싶은 점
  + tensorflow를 활용한 학습을 시도하고 싶다.
  + 앱과 연동된 프로그램 개발을 시도하고 싶다.
- 
+ + 좀 더 여유있는 VRAM 확보가 가능할 경우 이미지 resize없이도 충분히 빠른속도로 학습이 가능할 것으로 예상된다.
