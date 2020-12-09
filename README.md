@@ -54,7 +54,7 @@ OPENMP=0
 LIBSO=1
 ```
 <br>
-* make를 통해 darknet을 make 한다.
+* make를 통해 darknet을 make 한다.<br>
 ```
 make
 ```
