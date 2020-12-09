@@ -178,12 +178,13 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 ## :bulb: 보완하고 싶은 점
 
 
-<figure role="group">
-    <figure role="group">
+<div class="half">
+  <div> 
     <img src="https://user-images.githubusercontent.com/61648914/101640104-6d0ab380-3a73-11eb-9898-acbcc09e43da.png" alt="선행연구 데이터 결과" width="33%">
-    <figcaption>선행연구 데이터 결과</figcaption>
-    <figure role="group">
+    <p>선행연구 데이터 결과</p>
+  </div>
+  <div> 
     <img src="https://user-images.githubusercontent.com/61648914/101640501-ee624600-3a73-11eb-84cd-ba1b065fe04b.png" alt="크롤링 데이터 결과" width="33%">
-    <figcaption>크롤링 데이터 결과</figcaption>
-    </figure>
-</figure>
+    <p>크롤링 데이터 결과</p>
+  </div>
+</div>
