@@ -170,9 +170,9 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 | set | Train Good | Train Bad | Train Merge | Test |
 | ------- | --------- | ------- | --------- | --------- |
 | Number of Images | 767 | 656 | 713 | 220 |
-| Mask | 2,923 | 2,549 | 2,547 | 947 |
-| No Mask | 894 | 655 | 823 | 220 |
-| Total | 3,817 | 3,204 | 3,370 | 1,167 |
+|    Mask | 2,923 | 2,549 | 2,547 | 947 |
+|    No Mask | 894 | 655 | 823 | 220 |
+|    Total | 3,817 | 3,204 | 3,370 | 1,167 |
 
 
 ### 2. 실험결과
