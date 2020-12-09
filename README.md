@@ -42,7 +42,6 @@
 ```
 git clone https://github.com/AlexeyAB/darknet.git
 ```
-<br>
 
 * darknet을 컴퓨터에 make하기 위해 makefile을 수정한다. GPU를 사용할 것이라면 GPU, CUDNN을 1로 설정하며 CUDNN_HALF는 학습속도를 향상시키는 부분이라고 한다. Open cv를 사용할 경우 OPENCV=1로 수정하고 LIBSO는 추후 응용 프로그램에 사용할 so 파일을 생성하는 옵션이다.<br>
 
@@ -55,8 +54,6 @@ AVX=0
 OPENMP=0 
 LIBSO=1 
 ```
-
-<br>
 
 * make를 통해 darknet을 make 한다.<br>
 
@@ -127,6 +124,10 @@ beta_nms=0.6
 Ctrl+f를 이용하여 yolo부분을 검색해서 수정한다. yolo 부분에 classes와 convolutional 부분의 filters를 수정한다. classes는 훈련 시키는 데이터셋의 classes 갯수, filter 갯수는 (classes+5) * 3으로 AlexeyAB github에서 제시하고 있다. yolo 부분은 총 3개가 있어 모두 찾아 수정한다.
 
 ### 4. Data set 정의
+##### 4.1 Padding
+YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수정하여 model을 거치게 되므로 resize할 필요가 없다. 하지만 한정된 VRAM에서 일정한 size의 data를 input 함으로써 최적의 활용이 가능해지므로 데이터의 size를 608 * 608로 resize하였다. 코드는 ooo와 같다.
+
+##### 4.2 데이터셋 경로 파일 수정
 업로드 한 custom_data 형식에 맞게 txt 파일을 만든다.
 ```
 ├── custom_data/
