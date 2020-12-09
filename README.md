@@ -179,12 +179,10 @@ https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
 
 ### 2. 실험결과
 
-##### Training Chart
+#### Training Chart
 ![mAP 통합 (1)](https://user-images.githubusercontent.com/61648914/101667630-e8c82880-3a92-11eb-96b1-7b5ce352df39.png)
 
-<br>
-
-##### Evaluate
+#### Evaluate Table
 
 | Value | Train Good | Train Bad | Train Merge |
 | :---------: | :---------: | :---------: | :---------: |
