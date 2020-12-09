@@ -37,6 +37,8 @@
   + OpenCV 4.42
   + cuDNN 7.64
 
+<br>
+
 ### 1. YOLOv4 설치
 * AlexAB의 github에 들어가서 git을 clone 해오거나 zip파일로 다운로드 받는다.<br>
 ```
@@ -64,6 +66,8 @@ make
 
 ### 2. 데이터 수집
 선행 연구(주소)에서 활용한 데이터셋 887개와 구글에서 __"mask people" , "korea mask people", "wear mask people"__ 이라고 검색하여 크롤링한 후 중복되거나 그림파일이거나 혹은 파일이 열리지 않는 경우를 제외하여 데이터셋 756개를 수집하였다. 코드는 google_mask_image_crawling.ipynb 이다.
+
+<br>
 
 ### 3. cfg파일 수정
 cfg/yolov4-custom.cfg 파일을 AlexeyAB github에서 제시하는 최적의 값으로 수정한다. <br>
@@ -138,12 +142,14 @@ YOLO에는 어떠한 size의 데이터가 input되더라도 같은 size로 수�
    └── train.txt
 ```
  - `dataset_label` 모든 데이터셋과 각 사진들의 label에대한 txt파일을 저장한다. AlexyAB의 Yolo_mark를 활용했으며 주소는 다음과 같다. https://github.com/AlexeyAB/Yolo_mark
+ 그 후, 앞서 2번에서 언급한 그림파일 혹은 라벨이 없는 이미지를 제거하였다. 코드는 OOO과 같다.
  - `obj.data` 전체적인 파일의 경로들을 저장한다.
  - `obj.names` classes name을 저장한다.
  - `test.txt` test에서 활용할 데이터 셋의 경로를 저장한다.
  - `train.txt` train에서 활용할 데이터 셋의 경로를 저장한다.
 
+<br>
 
-
-### 1. Weights
+### 5. Weights
  #### Transfer learning을 위해 AlexeyAB github에서 제공하는 yolov4의 pretrain모델을 다운받는다.
+ drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp
